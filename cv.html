@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV | Emma Gairin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sidebar (Header + Footer) -->
+  <div id="site-header"></div>
+
+  <main>
+    <h2>Curriculum Vitae</h2>
+
+    <section>
+      <h3>Position</h3>
+      <p><strong>JSPS DC1 PhD candidate</strong> in the Marine Eco-Evo-Devo Unit, OIST</p>
+    </section>
+
+    <section>
+      <h3>Education</h3>
+      <ul>
+        <li><strong>University of Edinburgh</strong>, BSc (Hons) Environmental Geoscience, 2020</li>
+        <li><strong>École Normale Supérieure, PSL University</strong>, MSc Ecology and Evolution, 2021</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Positions &amp; Employment</h3>
+      <ul>
+        <li>2018: Research Intern, University of Tokyo, Japan</li>
+        <li>2019: Research Intern, Institut de Recherche pour le Développement, New Caledonia, France</li>
+        <li>2021: Research Intern, CRIOBE, French Polynesia, France</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Honors &amp; Awards</h3>
+      <ul>
+        <li>2024–2027: JSPS DC1 Research Fellow</li>
+        <li>2024: Best talk, Fall OIST Internal Seminar Series</li>
+        <li>2024: PRIMO22 Travel Support</li>
+        <li>2020–2021: Graduate Program Scholarship in Earth Science and Biodiversity</li>
+        <li>2019: University of Tokyo Summer Internship Scholarship</li>
+        <li>2016–2018: Class medals (top marks), University of Edinburgh</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Research Funding</h3>
+      <ul>
+        <li>2024–2027: JSPS DC1-associated grant (¥2.1M)</li>
+        <li>2023: Iwatani Research Grant (¥2.0M)</li>
+        <li>2023: SHINKA Research Grant (¥0.7M)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Peer Reviews</h3>
+      <p>Reviewed for journals including:</p>
+      <ul>
+        <li>Environmental Science and Pollution Research (IF 5.19)</li>
+        <li>Scientific Reports (IF 3.8)</li>
+        <li>Marine Environmental Research (IF 3.7)</li>
+        <li>Estuaries and Coasts (IF 3.03)</li>
+        <li>Environmental Monitoring and Assessment (IF 2.9)</li>
+        <li>Coral Reefs (IF 2.7)</li>
+        <li>Marine Geodesy (IF 1.6)</li>
+        <li>Marine and Fisheries Science (IF 0.1)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Conferences</h3>
+      <p>Oral presentations and posters at:</p>
+      <ul>
+        <li>IPFC 2025</li>
+        <li>Dec 2024: OIST internal seminar series</li>
+        <li>Mar 2025: ASLO2025</li>
+        <li>May 2024: PRIMO22</li>
+        <li>June 2023: Singapore APCRS 2023</li>
+        <li>May 2022: Conference St Malo 2022</li>
+        <li>Oct &amp; Dec 2023: Sendai Marine Science Symposium 2023</li>
+        <li>Apr 2024: OIST-CNRS Joint Symp. on West Pacific Marine Biology</li>
+        <li>Apr 2023: Okinawa Marine Science Symposium</li>
+        <li>Apr 2022: OIST-Tohoku Marine Science Symposium</li>
+        <li>Feb 2022: RIF 2022</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script>
+    // Load sidebar (header.html contains header + footer)
+    fetch('header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('site-header').innerHTML = html);
+  </script>
+
+</body>
+</html>
