@@ -184,3 +184,20 @@ footer a:hover {
   text-decoration: underline;
 }
 
+h2 {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: #003366;
+}
+
+.pub-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pub-list li {
+  margin-bottom: 20px;
+}
+
