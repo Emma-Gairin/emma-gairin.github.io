@@ -195,9 +195,9 @@ h2 {
   padding: 0;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  padding-right: 10px; /* Adds space on the right side */
 }
 
 .pub-list li {
   margin-bottom: 20px;
 }
-
