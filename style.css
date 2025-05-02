@@ -54,7 +54,7 @@ header::before {
   font-size: 1.5em;
   margin-bottom: 30px;
   text-align: center;
-  color: #003366;  /* Dark Blue for header text */
+  color: #a7bfd6;  /* Dark Blue for header text */
 }
 
 nav ul.navbar {
@@ -164,8 +164,7 @@ h2, h3 {
 /* Footer in Sidebar */
 header footer {
   width: 100%;
-  background-color: #003366; /* Same as sidebar */
-  color: white;
+  color: #82b7d1;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
@@ -176,7 +175,7 @@ header footer {
 
 /* Optional hover styling for footer links */
 footer a {
-  color: #66ccff;
+  color: #bdd1db;
   text-decoration: none;
 }
 
