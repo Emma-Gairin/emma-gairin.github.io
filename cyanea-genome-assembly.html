@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Genome assembly | Emma Gairin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genome Assembly | Emma Gairin</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Font link -->
 </head>
 <body>
   <header>
     <h1>Emma Gairin's GitHub</h1>
-    <nav>
+    <nav class="navbar">
       <a href="index.html">Home</a>
       <a href="cyanea-genome-assembly.html">Genome Assembly Pipeline</a>
     </nav>
@@ -18,12 +19,9 @@
   <main>
     <h2>Chrysiptera cyanea - Genome Assembly Pipeline</h2>
 
-    <p>Chrysiptera cyanea is a common damselfish living in Indo-Pacific waters. To obtain its genome, its DNA was sequenced using PacBio HiFi, and the following pipeline was then used starting from the raw reads.
-      The resulting genome and annotation are published at  https://doi.org/10.46471/gigabyte.144.
-     </p>
+    <p>Chrysiptera cyanea is a common damselfish living in Indo-Pacific waters. To obtain its genome, its DNA was sequenced using PacBio HiFi, and the following pipeline was then used starting from the raw reads. The resulting genome and annotation are published at <a href="https://doi.org/10.46471/gigabyte.144" target="_blank" rel="noopener noreferrer">DOI: 10.46471/gigabyte.144</a>.</p>
 
-    <img src="figures/cyaneagenome/genome_fig1_final.png" alt="(A) Female and male Chrysiptera cyanea collected at Sesoko beach, Okinawa, in September 2022. (B) Underwater photography of a school of C. cyanea at Sesoko Beach, September 2022. (C) Global georeferenced records of C. cyanea (477 records) were extracted from the Wallace module [
-and plotted with QGIS 3.22.9. (D) Life cycle of C. cyanea from hatching to adult stage. Drawing by Stefano Vianello. Figure from Gairin et al. 2024." style="width: 100%; max-width: 800px; display: block; margin: 20px auto;">
+    <img src="figures/cyaneagenome/genome_fig1_final.jpg" alt="Figures related to Chrysiptera cyanea" class="pipeline-image">
 
     <h3>1. Quality Control (QC) of Raw Reads</h3>
     <p>Before starting assembly, we perform quality control using tools like <strong>FastQC</strong> to evaluate the raw read quality.</p>
@@ -40,12 +38,11 @@ and plotted with QGIS 3.22.9. (D) Life cycle of C. cyanea from hatching to adult
     <h3>5. Annotation</h3>
     <p>Gene prediction and functional annotation are performed using tools like <strong>MAKER</strong> and <strong>Augustus</strong>.</p>
 
-    <!-- Optional: You can also include links to scripts or resources -->
     <p>For more details on the specific scripts used, see our <a href="scripts.html">Scripts Page</a>.</p>
   </main>
 
   <footer>
-    <p>© 2025 Your Name</p>
+    <p>© 2025 Emma Gairin</p>
   </footer>
 </body>
 </html>
