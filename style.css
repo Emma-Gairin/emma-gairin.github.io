@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: #003366;  /* Dark Blue for text visibility */
+  color: #006ca6;  /* Dark Blue for text visibility */
   background-color: #f4f4f4;
   display: flex;
   min-height: 100vh;
@@ -20,7 +20,7 @@ body {
 header {
   width: 250px;
   background-color: #003366;
-  color: white;
+  color: #d3dbe3;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,6 @@ header footer {
   width: 100%;
   margin: 0;
   padding: 20px;
-  background-color: rgba(0,0,0,0.6); /* or match your overlay color */
   text-align: center;
   font-size: 0.9rem;
   color: white;
@@ -87,7 +86,18 @@ nav ul.navbar a {
 }
 
 nav ul.navbar a:hover {
-  background-color: #1a4d80;
+  background-color: #239fc4;
+}
+
+/* Remove bullets from dropdown lists */
+nav .dropdown-content ul {
+  list-style: none;  /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+nav .dropdown-content li {
+  margin: 0;
 }
 
 /* Dropdown styles */
@@ -148,7 +158,7 @@ h2, h3 {
 
 .project-card a {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 5px;
   color: #003366;  /* Dark Blue for links */
   font-weight: bold;
   text-decoration: none;
