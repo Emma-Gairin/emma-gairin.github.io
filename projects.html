@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Emma Gairin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <div id="site-header"></div>
+  
+  <main>
+    <h1>Research Projects</h1>
+    <section class="intro">
+      <p>Welcome to my research projects page! Below you will find an overview of the key projects I am working on, each exploring different aspects of ecological genomics, from genome assembly to landscape transcriptomics.</p>
+    </section>
+
+    <section class="projects">
+      <h2>Current Research Projects</h2>
+      
+      <!-- Project 1: Genome Assembly -->
+      <div class="project-card">
+        <h3>C. cyanea Genome Assembly</h3>
+        <p>Explore the genome assembly pipeline for the marine damselfish *Chrysiptera cyanea*. The project includes detailed steps from DNA sequencing to genome annotation.</p>
+        <a href="cyanea-genome-assembly.html">Read More</a>
+      </div>
+
+      <!-- Project 2: Landscape Transcriptomics -->
+      <div class="project-card">
+        <h3>C. cyanea Landscape Transcriptomics</h3>
+        <p>This project investigates gene expression changes in *Chrysiptera cyanea* under environmental stressors like pollutants and climate change. It focuses on transcriptomic responses across different habitats.</p>
+        <a href="cyanea-landscape-transcriptomics.html">Read More</a>
+      </div>
+
+      <!-- Add more projects as necessary -->
+      
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="site-footer"></div>
+
+  <script>
+    // Load header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('site-header').innerHTML = html;
+      });
+
+    // Load footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('site-footer').innerHTML = html;
+      });
+  </script>
+
+</body>
+</html>
