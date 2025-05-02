@@ -1,6 +1,6 @@
 /* General Body Styles */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #333;
   background-color: #f4f4f4;
   margin: 0;
@@ -43,7 +43,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #f76c6c;  /* Change color when hovering over links */
+  color: #34a1eb;  /* Change color when hovering over links */
 }
 
 /* General Header Styling for h1, h2, h3 */
