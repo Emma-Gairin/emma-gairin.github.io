@@ -18,23 +18,9 @@
     <p>Chrysiptera cyanea is a common damselfish living in Indo-Pacific waters. To obtain its genome, its DNA was sequenced using PacBio HiFi, and the following pipeline was then used starting from the raw reads. The resulting genome and annotation are published at <a href="https://doi.org/10.46471/gigabyte.144" target="_blank" rel="noopener noreferrer">DOI: 10.46471/gigabyte.144</a>.</p>
 
     <img src="figures/cyaneagenome/genome_fig1_final.jpg" alt="Figures related to Chrysiptera cyanea" class="pipeline-image">
-
-    <h3>1. Quality Control (QC) of Raw Reads</h3>
-    <p>Before starting assembly, we perform quality control using tools like <strong>FastQC</strong> to evaluate the raw read quality.</p>
-
-    <h3>2. Trimming</h3>
-    <p>Low-quality bases and adapter sequences are removed using <strong>Trimmomatic</strong> to ensure clean input data for assembly.</p>
-
     <h3>3. Assembly</h3>
-    <p>The genome assembly is performed using <strong>SPAdes</strong> or <strong>Canu</strong>, depending on the type of sequencing (short or long reads).</p>
-
-    <h3>4. Post-Assembly QC</h3>
-    <p>After assembly, we check for completeness and contamination using tools like <strong>BUSCO</strong> to assess genome assembly quality.</p>
-
-    <h3>5. Annotation</h3>
-    <p>Gene prediction and functional annotation are performed using tools like <strong>MAKER</strong> and <strong>Augustus</strong>.</p>
-
-    <p>For more details on the specific scripts used, see our <a href="scripts.html">Scripts Page</a>.</p>
+    <p>Following quality control (QC) of the raw PacBio HiFi reads, the reads were converted to fastq format and two assemblers were tested: <a href="https://github.com/mikolmogorov/Flye" target="_blank">Flye</a> and the <a href="https://github.com/PacificBiosciences/pbipa" target="_blank">Improved Phased Assembler (IPA)</a>.
+      
   </main>
 
 
