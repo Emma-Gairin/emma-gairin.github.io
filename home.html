@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Sidebar (Header + Footer included) -->
   <div id="site-header"></div>
   
   <main>
@@ -18,22 +18,12 @@
     <p>Explore my research on genome assembly, transcriptomics, and ecological genomics...</p>
   </main>
 
-  <!-- Footer -->
-  <div id="site-footer"></div>
-
   <script>
-    // Load header
+    // Load sidebar (header.html contains header + footer)
     fetch('header.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('site-header').innerHTML = html;
-      });
-
-    // Load footer
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('site-footer').innerHTML = html;
       });
   </script>
 
