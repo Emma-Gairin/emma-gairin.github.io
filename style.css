@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: #333;
+  color: #003366;  /* Dark Blue for text visibility */
   background-color: #f4f4f4;
   display: flex;
   min-height: 100vh;
@@ -53,6 +53,7 @@ header::before {
   font-size: 1.5em;
   margin-bottom: 30px;
   text-align: center;
+  color: #003366;  /* Dark Blue for header text */
 }
 
 nav ul.navbar {
@@ -100,7 +101,7 @@ main {
 }
 
 h2, h3 {
-  color: #003366;
+  color: #003366;  /* Dark Blue for headers */
   margin-bottom: 10px;
 }
 
@@ -129,7 +130,7 @@ h2, h3 {
 }
 
 .project-card h3 {
-  color: #003366;
+  color: #003366;  /* Dark Blue for project titles */
 }
 
 .project-card p {
@@ -139,7 +140,7 @@ h2, h3 {
 .project-card a {
   display: inline-block;
   margin-top: 10px;
-  color: #003366;
+  color: #003366;  /* Dark Blue for links */
   font-weight: bold;
   text-decoration: none;
 }
@@ -150,12 +151,14 @@ h2, h3 {
 
 /* Footer */
 footer {
-  margin-left: 270px;
   background-color: #003366;
   color: white;
   text-align: center;
   padding: 20px;
   font-size: 14px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
 }
 
 footer a {
