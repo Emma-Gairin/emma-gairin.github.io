@@ -46,8 +46,6 @@
     <p>The full dataset and scripts used for this project are available upon request or in the <a href="scripts.html">Scripts Page</a>.</p>
   </main>
 
-  <!-- Footer -->
-  <div id="site-footer"></div>
 
   <script>
     // Load header
@@ -55,13 +53,6 @@
       .then(response => response.text())
       .then(html => {
         document.getElementById('site-header').innerHTML = html;
-      });
-
-    // Load footer
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('site-footer').innerHTML = html;
       });
   </script>
 
