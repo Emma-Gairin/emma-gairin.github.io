@@ -33,6 +33,15 @@ header {
   background-repeat: no-repeat;
 }
 
+header footer {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.6); /* or match your overlay color */
+  text-align: center;
+  font-size: 0.9rem;
+  color: white;
+}
 header::before {
   content: "";
   position: absolute;
