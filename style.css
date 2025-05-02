@@ -210,3 +210,15 @@ h2 {
 .pub-list li {
   margin-bottom: 20px;
 }
+
+.cv-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  padding-right: 10px; /* Adds space on the right side */
+}
+
+.cv-list li {
+  margin-bottom: 5px;
+}
