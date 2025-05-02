@@ -9,40 +9,25 @@
   <style>
     .carousel-container {
       position: relative;
-      max-width: 600px;
-      margin: 40px auto;
+      max-width: 100%;
+      width: 100%;
+      height: 250px; /* Set a fixed height for the banner */
       overflow: hidden;
-      border-radius: 12px;
+      margin: 40px auto;
     }
 
     .slides {
       display: none;
       width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures images crop and fill the container */
     }
 
-    .carousel-dots {
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    .dot {
-      height: 12px;
-      width: 12px;
-      margin: 0 4px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-
-    .active {
-      background-color: #333;
-      .p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-top: 1rem;
-  margin-bottom: 1rem; /* Adds vertical space between paragraphs */
-}
+    .p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-top: 1rem;
+      margin-bottom: 1rem; /* Adds vertical space between paragraphs */
     }
   </style>
 </head>
@@ -53,13 +38,13 @@
   
   <main>
     <h2>Emma Gairin's Research Portfolio</h2>
-      <p>I am a <strong>4th-year PhD candidate</strong> working with the <strong>Marine Eco-Evo-Devo Unit at the Okinawa Institute of Science and Technology</strong> on the subtropical island of Okinawa, in Japan.</p>
-      <p>My current research focuses on the links between the <strong>environment and gene expression levels</strong>strong> in the blue damselfish <i>Chrysiptera cyanea</i>.
-      As a first step for this research, I have assembled and annotated the <a href="https://doi.org/10.46471/gigabyte.144" target="_blank">genome</a> of this iconic Okinawan fish (find the pipeline <a href="https://emma-gairin.github.io/cyanea-genome-assembly.html" target="_blank">here</a>).
-      I am now working on a large dataset to link environmental conditions with gene expression patterns in juvenile and adult fish, and have already presented my research at various Japanese and international conferences. Stay tuned for the upcoming publications!</p>
-      <p>Prior to joining my current lab and becoming an 'omics enthusiast, I obtained degrees in Earth Science and Ecology from the University of Edinburgh and Ecole Normale Superieure in Paris.</p>
-      During that time, I participated in multiple research projects in New Caledonia and French Polynesia, focusing on <strong>coral reef ecosystems</strong>, notably looking at marine protected areas but also at historical coastline changes and links between human activities and fish populations (<a href="https://emma-gairin.github.io/publications.html" target="_blank">full list of research output</a>).
-      <p>As I found the patterns we observed between <strong>fish communities and human activities</strong> particularly interesting and relevant, I sought to dig deeper into the biological mechanisms through which fish respond to their environment -- which I am now doing for my PhD using wild fish transcriptomes.</p>
+    <p>I am a <strong>4th-year PhD candidate</strong> working with the <strong>Marine Eco-Evo-Devo Unit at the Okinawa Institute of Science and Technology</strong> on the subtropical island of Okinawa, in Japan.</p>
+    <p>My current research focuses on the links between the <strong>environment and gene expression levels</strong> in the blue damselfish <i>Chrysiptera cyanea</i>.
+    As a first step for this research, I have assembled and annotated the <a href="https://doi.org/10.46471/gigabyte.144" target="_blank">genome</a> of this iconic Okinawan fish (find the pipeline <a href="https://emma-gairin.github.io/cyanea-genome-assembly.html" target="_blank">here</a>).
+    I am now working on a large dataset to link environmental conditions with gene expression patterns in juvenile and adult fish, and have already presented my research at various Japanese and international conferences. Stay tuned for the upcoming publications!</p>
+    <p>Prior to joining my current lab and becoming an 'omics enthusiast, I obtained degrees in Earth Science and Ecology from the University of Edinburgh and Ecole Normale Superieure in Paris.</p>
+    <p>During that time, I participated in multiple research projects in New Caledonia and French Polynesia, focusing on <strong>coral reef ecosystems</strong>, notably looking at marine protected areas but also at historical coastline changes and links between human activities and fish populations (<a href="https://emma-gairin.github.io/publications.html" target="_blank">full list of research output</a>).</p>
+    <p>As I found the patterns we observed between <strong>fish communities and human activities</strong> particularly interesting and relevant, I sought to dig deeper into the biological mechanisms through which fish respond to their environment -- which I am now doing for my PhD using wild fish transcriptomes.</p>
   </main>
 
   <!-- Image Carousel -->
@@ -67,11 +52,6 @@
     <img class="slides" src="figures/image1.jpg" alt="Image 1">
     <img class="slides" src="figures/image2.jpg" alt="Image 2">
     <img class="slides" src="figures/image3.jpg" alt="Image 3">
-  </div>
-  <div class="carousel-dots">
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span> 
   </div>
 
   <script>
@@ -86,17 +66,12 @@
     let slideIndex = 0;
     function showSlides() {
       const slides = document.getElementsByClassName("slides");
-      const dots = document.getElementsByClassName("dot");
       for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
       slideIndex++;
       if (slideIndex > slides.length) {slideIndex = 1}
-      for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
       slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
       setTimeout(showSlides, 5000); // Change image every 5 seconds
     }
     showSlides();
