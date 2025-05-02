@@ -2,65 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emma Gairin | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Emma Gairin</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Sidebar Navigation -->
-  <aside class="sidebar">
-    <div class="logo">Emma Gairin</div>
-    <nav class="nav">
-      <a href="home.html">Home</a>
-      <a href="cv.html">CV</a>
-      <div class="dropdown">
-        <button class="dropdown-btn">Projects ▾</button>
-        <div class="dropdown-container">
-          <a href="cyanea-genome-assembly.html">C. cyanea | Genome assembly</a>
-          <a href="cyanea-landscape-transcriptomics.html">C. cyanea | Landscape transcriptomics</a>
-        </div>
-      </div>
-    </nav>
-
-
-  <!-- Main content -->
-  <main class="content">
-    <section class="intro">
-      <h1>Welcome to My Research Portfolio</h1>
-      <p>Explore my research on genome assembly, transcriptomics, and ecological genomics. In this portfolio, you'll find detailed explanations of the methodologies I use and the results I have achieved in various projects.</p>
-      <p>My work aims to better understand gene expression in response to environmental stressors and evolutionary processes in aquatic organisms.</p>
-    </section>
-
-    <section class="projects">
-      <h2>Current Projects</h2>
-      <div class="project-card">
-        <h3>Genome Assembly</h3>
-        <p>A comprehensive pipeline for genome assembly of marine species, focusing on the Chrysiptera cyanea genome. Learn more about the assembly process.</p>
-        <a href="cyanea-genome-assembly.html">Read More</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Landscape Transcriptomics</h3>
-        <p>Exploring gene expression in aquatic organisms under environmental stress, focusing on pollutants and climate change impacts. Discover the methodology and findings.</p>
-        <a href="cyanea-landscape-transcriptomics.html">Read More</a>
-      </div>
-    </section>
-
-    <section class="about">
-      <h2>About Me</h2>
-      <p>I am a researcher in ecological genomics with a focus on understanding how environmental factors influence gene expression. My projects aim to bridge the gap between molecular biology and environmental science.</p>
-    </section>
+  <!-- Header -->
+  <div id="site-header"></div>
+  
+  <main>
+    <h1>Emma Gairin's Research Portfolio</h1>
+    <h2>Welcome to My Research Portfolio</h2>
+    <p>Explore my research on genome assembly, transcriptomics, and ecological genomics...</p>
   </main>
 
-        <footer>
-      <p>© 2025 Emma Gairin<br>
-        <a href="https://www.oist.jp/research/research-units/meedu" target="_blank">Marine Eco-Evo-Devo Unit @ OIST</a><br>
-        <a href="https://github.com/Emma-Gairin" target="_blank">GitHub</a>
-      </p>
-    </footer>
-  </aside>
+  <!-- Footer -->
+  <div id="site-footer"></div>
+
+  <script>
+    // Load header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('site-header').innerHTML = html;
+      });
+
+    // Load footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('site-footer').innerHTML = html;
+      });
+  </script>
 
 </body>
 </html>
