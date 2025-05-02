@@ -33,14 +33,7 @@ header {
   background-repeat: no-repeat;
 }
 
-header footer {
-  width: 100%;
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: white;
-}
+
 header::before {
   content: "";
   position: absolute;
@@ -168,18 +161,20 @@ h2, h3 {
   text-decoration: underline;
 }
 
-/* Footer */
-footer {
-  background-color: #003366;
+/* Footer in Sidebar */
+header footer {
+  width: 100%;
+  background-color: #003366; /* Same as sidebar */
   color: white;
   text-align: center;
   padding: 20px;
-  font-size: 14px;
-  position: absolute;
+  font-size: 0.9rem;
+  position: absolute;  /* Position it at the bottom */
   bottom: 20px;
-  width: 100%;
+  left: 0;
 }
 
+/* Optional hover styling for footer links */
 footer a {
   color: #66ccff;
   text-decoration: none;
@@ -188,3 +183,4 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
