@@ -57,6 +57,16 @@ header::before {
   color: #a7bfd6;  /* Dark Blue for header text */
 }
 
+a {
+  color: #1a73e8;       /* Slightly different from default blue */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1558b0;       /* Darker on hover */
+}
+
+
 nav ul.navbar {
   list-style-type: none;
   position: relative;
@@ -184,7 +194,7 @@ footer a:hover {
 }
 
 h2 {
-  margin-top: 3rem;
+  margin-top: 4rem;
   font-size: 1.5rem;
   color: #003366;
 }
@@ -192,8 +202,8 @@ h2 {
 .pub-list {
   list-style-type: none;
   padding: 0;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
   padding-right: 10px; /* Adds space on the right side */
 }
 
