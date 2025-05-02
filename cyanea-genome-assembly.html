@@ -3,30 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Genome Assembly | Emma Gairin</title>
+  <title>Home | Emma Gairin</title>
   <link rel="stylesheet" href="style.css" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Emma Gairin's GitHub</h1>
-<nav>
-  <ul class="navbar">
-    <li><a href="home.html">Home</a></li>
-    <li><a href="cv.html">CV</a></li>
-    <li class="dropdown">
-      <a href="#">Projects ▾</a>
-      <ul class="dropdown-content">
-        <li><a href="cyanea-genome-assembly.html">C. cyanea genome assembly</a></li>
-        <li><a href="cyanea-landscape-transcriptomics.html">C. cyanea landscape transcriptomics</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </header>
 
+  <!-- Header -->
+  <div id="site-header"></div>
+  
   <main>
-    <h2>Chrysiptera cyanea - Genome Assembly Pipeline</h2>
+  <h2>Chrysiptera cyanea - Genome Assembly Pipeline</h2>
 
     <p>Chrysiptera cyanea is a common damselfish living in Indo-Pacific waters. To obtain its genome, its DNA was sequenced using PacBio HiFi, and the following pipeline was then used starting from the raw reads. The resulting genome and annotation are published at <a href="https://doi.org/10.46471/gigabyte.144" target="_blank" rel="noopener noreferrer">DOI: 10.46471/gigabyte.144</a>.</p>
 
@@ -50,8 +37,24 @@
     <p>For more details on the specific scripts used, see our <a href="scripts.html">Scripts Page</a>.</p>
   </main>
 
-  <footer>
-    <p>© 2025 Emma Gairin</p>
-  </footer>
+  <!-- Footer -->
+  <div id="site-footer"></div>
+
+  <script>
+    // Load header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('site-header').innerHTML = html;
+      });
+
+    // Load footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('site-footer').innerHTML = html;
+      });
+  </script>
+
 </body>
 </html>
