@@ -9,17 +9,16 @@ body {
 
 /* Dark Blue Header with Image */
 header {
-  position: relative; /* Make sure it has a positioning context for the overlay */
-  background-image: url('figures/DSCN6047.JPG');  /* Path to your background image */
-  background-size: cover;  /* Make sure the image covers the whole header */
-  background-position: center;  /* Center the background image */
-  background-repeat: no-repeat;  /* Ensure the image doesn't repeat */
-  color: white;  /* White text color for contrast */
-  padding: 80px 0;  /* Adjust padding for more space */
+  position: relative;
+  background-image: url('figures/DSCN6047.JPG');  /* Update path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 80px 0;
   text-align: center;
 }
 
-/* Overlay for better text contrast on top of the image */
 header::before {
   content: "";
   position: absolute;
@@ -27,32 +26,79 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);  /* Black overlay with 40% transparency */
-  z-index: -1;  /* Place overlay behind the text */
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 
-/* Navbar links inside the header */
-header nav a {
+/* NAVIGATION BAR WITH ICONS AND DROPDOWN */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+nav ul.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+nav ul.navbar > li {
+  position: relative;
+}
+
+nav a {
   text-decoration: none;
   color: white;
   font-size: 18px;
-  font-weight: bold;
-  margin: 0 15px;
-  padding: 10px;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s;
+  border-radius: 6px;
 }
 
-header nav a:hover {
-  color: #34a1eb;  /* Change color when hovering over links */
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* General Header Styling for h1, h2, h3 */
+/* Dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 300px;
+  background-color: #0e2a45;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  border-radius: 0 0 6px 6px;
+}
+
+.dropdown-content li a {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Headings */
 h1, h2, h3 {
-  color: #003366;  /* Dark blue color for all headers */
-  font-family: 'Roboto', sans-serif;
+  color: #003366;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Optional: Adjust font size and margin for a neat layout */
 h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
@@ -68,7 +114,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* Footer with Dark Blue Background */
+/* Footer */
 footer {
   background-color: #003366;
   color: white;
@@ -76,7 +122,15 @@ footer {
   text-align: center;
 }
 
-/* Footer Text Styling */
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #aadfff;
+}
+
 footer p {
   margin: 0;
   font-size: 14px;
