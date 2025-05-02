@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Genome Assembly Pipeline - Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Your Name - Genome Assembly Pipeline</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="pipeline.html">Pipeline</a>
+      <a href="assembly-pipeline.html">Genome Assembly Pipeline</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Genome Assembly Pipeline</h2>
+
+    <p>This page outlines the steps involved in assembling genome sequences from raw sequencing data using various tools.</p>
+
+    <h3>1. Quality Control (QC) of Raw Reads</h3>
+    <p>Before starting assembly, we perform quality control using tools like <strong>FastQC</strong> to evaluate the raw read quality.</p>
+
+    <h3>2. Trimming</h3>
+    <p>Low-quality bases and adapter sequences are removed using <strong>Trimmomatic</strong> to ensure clean input data for assembly.</p>
+
+    <h3>3. Assembly</h3>
+    <p>The genome assembly is performed using <strong>SPAdes</strong> or <strong>Canu</strong>, depending on the type of sequencing (short or long reads).</p>
+
+    <h3>4. Post-Assembly QC</h3>
+    <p>After assembly, we check for completeness and contamination using tools like <strong>BUSCO</strong> to assess genome assembly quality.</p>
+
+    <h3>5. Annotation</h3>
+    <p>Gene prediction and functional annotation are performed using tools like <strong>MAKER</strong> and <strong>Augustus</strong>.</p>
+
+    <!-- Optional: You can also include links to scripts or resources -->
+    <p>For more details on the specific scripts used, see our <a href="scripts.html">Scripts Page</a>.</p>
+  </main>
+
+  <footer>
+    <p>© 2025 Your Name</p>
+  </footer>
+</body>
+</html>
